@@ -70,13 +70,13 @@ void Input_KeyEvent(SDL_Event* evt)
 		case SDLK_SPACE:        bSelect = w; break;
 		case SDLK_RETURN:       bStart = w; break;
 #else
-        case SDLK_e:        bFaceUp = w; break;
-        case SDLK_x:        bFaceDown = w; break;
-        case SDLK_s:        bFaceLeft = w; break;
-        case SDLK_d:        bFaceRight = w; break;
-        case SDLK_r:        bR = w; break;
+        case SDLK_i:        bFaceUp = w; break;
+        case SDLK_k:        bFaceDown = w; break; //jump
+        case SDLK_j:        bFaceLeft = w; break; //slash
+        case SDLK_u:        bFaceRight = w; break; //secondary weapon
+        case SDLK_SPACE:        bR = w; break;
         case SDLK_w:        bL = w; break;
-		case SDLK_SPACE:    bSelect = w; break;
+//		case SDLK_SPACE:    bSelect = w; break;
 		case SDLK_ESCAPE:   bSelect = w; break;
         case SDLK_RETURN:   bStart = w; break;
 #endif
